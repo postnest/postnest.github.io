@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - PostNest</title>
+    <meta name="description" content="Terms of Service for PostNest - The all-in-one platform for scheduling posts to Twitter/X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, and Pinterest.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .tos-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .tos-sidebar {
+            width: 280px;
+            position: sticky;
+            top: 100px;
+            height: calc(100vh - 150px);
+            overflow-y: auto;
+            padding-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .tos-sidebar-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .tos-sidebar-item {
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            color: var(--dark-color);
+        }
+        
+        .tos-sidebar-item:hover {
+            background-color: rgba(104, 66, 224, 0.05);
+        }
+        
+        .tos-sidebar-item.active {
+            background-color: rgba(104, 66, 224, 0.1);
+            color: var(--primary-color);
+            font-weight: 500;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .tos-content {
+            flex: 1;
+            padding: 0 20px 40px;
+            line-height: 1.6;
+        }
+        
+        .tos-content h1 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+        
+        .tos-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            scroll-margin-top: 100px; /* For smooth scrolling to sections */
+        }
+        
+        .tos-content p, .tos-content ul {
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .tos-content ul {
+            padding-left: 20px;
+        }
+        
+        .tos-content ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+        
+        .tos-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .tos-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: var(--gray-color);
+            margin-bottom: 30px;
+        }
+        
+        .tos-header {
+            background-color: var(--light-color);
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .tos-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: var(--primary-dark);
+        }
+        
+        .back-link i {
+            margin-right: 5px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .tos-container {
+                flex-direction: column;
+            }
+            
+            .tos-sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                height: auto;
+                margin-bottom: 30px;
+                padding-right: 0;
+            }
+            
+            .tos-sidebar-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            
+            .tos-sidebar-item {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="PostNest Logo">
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-secondary">Log In</a>
+                    <a href="#" class="btn btn-primary">Sign Up Free</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+    </div>
+
+    <main>
+        <div class="tos-container">
+            <aside class="tos-sidebar">
+                <ul class="tos-sidebar-list">
+                    <li class="tos-sidebar-item active" data-section="intro">Introduction</li>
+                    <li class="tos-sidebar-item" data-section="section1">1. Description of Services</li>
+                    <li class="tos-sidebar-item" data-section="section2">2. TikTok Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section3">3. Instagram Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section4">4. Twitter/X Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section5">5. Bluesky Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section6">6. Pinterest Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section7">7. YouTube Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section8">8. Facebook Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section9">9. LinkedIn Compliance</li>
+                    <li class="tos-sidebar-item" data-section="section10">10. API Usage and Limits</li>
+                    <li class="tos-sidebar-item" data-section="section11">11. Compliance with Canva Terms of Service</li>
+                    <li class="tos-sidebar-item" data-section="section12">12. Accounts</li>
+                    <li class="tos-sidebar-item" data-section="section13">13. Content</li>
+                    <li class="tos-sidebar-item" data-section="section14">14. Payment Terms</li>
+                    <li class="tos-sidebar-item" data-section="section15">15. Cancellation & Refunds</li>
+                    <li class="tos-sidebar-item" data-section="section16">16. Children's Privacy</li>
+                    <li class="tos-sidebar-item" data-section="section17">17. Limitation of Liability</li>
+                    <li class="tos-sidebar-item" data-section="section18">18. Indemnification</li>
+                    <li class="tos-sidebar-item" data-section="section19">19. Governing Law</li>
+                    <li class="tos-sidebar-item" data-section="section20">20. Updates to Terms</li>
+                    <li class="tos-sidebar-item" data-section="section21">21. Contact Us</li>
+                </ul>
+            </aside>
+            
+            <div class="tos-content">
+                <h1 style="color: var(--primary-color); margin-bottom: 15px;">Terms of Service</h1>
+                <p class="last-updated">Last Updated: May 10, 2025</p>
+                <div id="intro">
+                    <p>Welcome to PostNest, a social media management tool ("Services") operated by PostNest ("us", "we", "our"). By accessing or using our Services at <a href="https://postnest.app">postnest.app</a>, you agree to these Terms of Service ("Terms"). If you do not agree, you may not use the Services.</p>
+                </div>
+
+                <h2 id="section1">1. Description of Services</h2>
+                <p>PostNest allows users to schedule, post, and manage content across multiple social media platforms from one dashboard using their APIs.</p>
+
+                <h2 id="section2">2. Compliance with TikTok Terms of Service</h2>
+                <p>By connecting your TikTok account, you agree to comply with TikTok's Terms of Service (<a href="https://www.tiktok.com/legal/terms-of-service" target="_blank">https://www.tiktok.com/legal/terms-of-service</a>). You authorize us to access and post on your behalf, subject to TikTok's limits (e.g., 100 posts/day per app). We are not liable for violations of TikTok's terms resulting from your use.</p>
+
+                <h2 id="section3">3. Compliance with Instagram Terms of Service</h2>
+                <p>By connecting your Instagram account, you agree to comply with Instagram's Terms of Use (<a href="https://help.instagram.com/581066165581870" target="_blank">https://help.instagram.com/581066165581870</a>). You authorize us to access and post, adhering to Instagram's rate limits (e.g., 200 requests/hour per user). We are not responsible for breaches of Instagram's terms.</p>
+
+                <h2 id="section4">4. Compliance with Twitter/X Terms of Service</h2>
+                <p>By connecting your Twitter/X account, you agree to comply with Twitter/X's Terms of Service (<a href="https://x.com/en/tos" target="_blank">https://x.com/en/tos</a>). You authorize us to access and post, respecting Twitter/X's limits (e.g., 300 posts/month for free tier). We are not liable for violations of Twitter/X's terms.</p>
+
+                <h2 id="section5">5. Compliance with Bluesky Terms of Service</h2>
+                <p>By connecting your Bluesky account, you agree to comply with Bluesky's Terms of Service (<a href="https://bsky.app/about/terms-of-service" target="_blank">https://bsky.app/about/terms-of-service</a>). You authorize us to access and post on your behalf, subject to Bluesky's API limits. We are not responsible for breaches of Bluesky's terms.</p>
+
+                <h2 id="section6">6. Compliance with Pinterest Terms of Service</h2>
+                <p>By connecting your Pinterest account, you agree to comply with Pinterest's Terms of Service (<a href="https://policy.pinterest.com/en/terms-of-service" target="_blank">https://policy.pinterest.com/en/terms-of-service</a>). You authorize us to access and post, adhering to Pinterest's API limits (e.g., 1,000 requests/day per app). We are not liable for violations of Pinterest's terms.</p>
+
+                <h2 id="section7">7. Compliance with YouTube Terms of Service</h2>
+                <p>By connecting your YouTube account, you agree to comply with YouTube's Terms of Service (<a href="https://www.youtube.com/t/terms" target="_blank">https://www.youtube.com/t/terms</a>). You authorize us to access and post, respecting YouTube's API quotas (e.g., 10,000 units/day). We are not responsible for breaches of YouTube's terms.</p>
+
+                <h2 id="section8">8. Compliance with Facebook Terms of Service</h2>
+                <p>By connecting your Facebook account, you agree to comply with Facebook's Terms of Service (<a href="https://www.facebook.com/legal/terms" target="_blank">https://www.facebook.com/legal/terms</a>). You authorize us to access and post, adhering to Facebook's API limits (e.g., 200 requests/hour per user). We are not liable for violations of Facebook's terms.</p>
+
+                <h2 id="section9">9. Compliance with LinkedIn Terms of Service</h2>
+                <p>By connecting your LinkedIn account, you agree to comply with LinkedIn's User Agreement (<a href="https://www.linkedin.com/legal/user-agreement" target="_blank">https://www.linkedin.com/legal/user-agreement</a>). You authorize us to access and post, respecting LinkedIn's API limits (e.g., 100,000 requests/day per app). We are not responsible for breaches of LinkedIn's terms.</p>
+
+                <h2 id="section10">10. API Usage and Limits</h2>
+                <p>We actively monitor and manage API usage to comply with platform limits. Limits (e.g., posts, refreshes) are shared across team members in applicable plans (e.g., Pro, Lifetime) to prevent overuse. Misuse may lead to account suspension; see our <a href="https://postnest.app/privacy.html">Privacy Policy</a> for details.</p>
+
+                <h2 id="section11">11. Compliance with Canva Terms of Service</h2>
+                <p>PostNest may integrate with Canva, a design platform provided by Canva Pty Ltd. (“Canva”), to enable features such as content creation and design integration. By using these features, you agree to comply with Canva’s Terms of Use (https://www.canva.com/policies/terms-of-use) and Privacy Policy (https://www.canva.com/policies/privacy-policy), which you are responsible for reviewing. You authorize us to access Canva’s services on your behalf, subject to Canva’s API limits and policies. Any designs or assets created or accessed via Canva remain the intellectual property of Canva or its licensors, and PostNest may display Canva branding (e.g., “Powered by Canva”) where applicable. We are not liable for downtime, changes, or discontinuation of Canva’s services, nor for your misuse of Canva’s terms.</p>
+
+                <h2 id="section12">12. Accounts</h2>
+                <p>Provide accurate account details. Safeguard your password and notify us at <a href="mailto:info@postnest.app">info@postnest.app</a> of breaches. We may terminate accounts for false information or misuse.</p>
+
+                <h2 id="section13">13. Content</h2>
+                <p>You own your content ("Content") but grant us a license to post it. Ensure Content complies with laws and platform rules. We may remove infringing Content or terminate accounts.</p>
+
+                <h2 id="section14">14. Payment Terms</h2>
+                <p>Paid Services require accurate payment info. Prices may change with 14 days' notice via email or site. Cancel before changes if you disagree.</p>
+
+                <h2 id="section15">15. Cancellation and Refunds</h2>
+                <p>Cancel anytime via your account or <a href="mailto:info@postnest.app">info@postnest.app</a>. Service lasts until the billing period ends. Refunds are available within 48 hours of purchase; contact us to request. No refunds after 48 hours.</p>
+
+                <h2 id="section16">16. Children's Privacy</h2>
+                <p>PostNest is not for children under 13 (or 16 per GDPR). We don't collect children's data knowingly; if we do, we'll delete it.</p>
+
+                <h2 id="section17">17. Limitation of Liability</h2>
+                <p>We're not liable for indirect damages from Service use, third-party actions, or API changes. Total liability is limited to fees paid in the prior 12 months.</p>
+
+                <h2 id="section18">18. Indemnification</h2>
+                <p>You'll indemnify PostNest against claims from your use, Term violations, or third-party rights infringement. This survives termination.</p>
+
+                <h2 id="section19">19. Governing Law</h2>
+                <p>Terms are governed by U.S. law. Disputes go to U.S. courts.</p>
+
+                <h2 id="section20">20. Updates to Terms</h2>
+                <p>We may update Terms, notifying via email or site. Continued use accepts changes. Check regularly.</p>
+
+                <h2 id="section21">21. Contact Us</h2>
+                <p>Contact us at <a href="mailto:info@postnest.app">info@postnest.app</a> for questions.</p>
+
+                <p>Thank you for choosing PostNest!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns-container">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="mailto:info@postnest.app">Support</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="/careers.html">Careers</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/tos.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-copyright-social">
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 PostNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/tos.js"></script>
+
+</body>
+</html>

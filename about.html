@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PostNest</title>
+    <meta name="description" content="About PostNest - The all-in-one platform for scheduling posts to social media platforms.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-header {
+            background-color: var(--light-color);
+            padding: 60px 0 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .about-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            line-height: 1.6;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            margin-bottom: 25px;
+        }
+        
+        .about-section {
+            margin-bottom: 50px;
+        }
+        
+        .about-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .about-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .mission-vision {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .mission, .vision {
+            flex: 1;
+            padding: 25px;
+            border-radius: 10px;
+            background-color: rgba(104, 66, 224, 0.05);
+        }
+        
+        .mission h3, .vision h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .mission h3 i, .vision h3 i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+        
+        .team-section {
+            text-align: center;
+        }
+        
+        .team-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .mission-vision {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="PostNest Logo">
+                    </a>
+                    <span class="tagline">Streamline Your Social Media Workflow</span>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#how-it-works">How It Works</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="api-docs.html">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-secondary">Log In</a>
+                    <a href="#" class="btn btn-primary">Sign Up Free</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+    
+    <section class="about-header">
+        <div class="container">
+            <h1>About PostNest</h1>
+        </div>
+    </section>
+
+    <div class="about-content">
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>PostNest was born from a simple observation: managing social media across multiple platforms is time-consuming and complex. As social media professionals ourselves, we experienced the frustration of juggling different tools, interfaces, and workflows just to maintain a consistent online presence.</p>
+            <p>Founded in 2024, PostNest set out to create a unified solution that simplifies social media management without sacrificing power or flexibility. We built the platform we wished existed—one that combines scheduling, analytics, design, and collaboration in a single, intuitive interface.</p>
+        </div>
+        
+        <div class="mission-vision">
+            <div class="mission">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>To empower businesses and creators to efficiently manage their social media presence across all platforms, saving time while maximizing engagement and growth.</p>
+            </div>
+            <div class="vision">
+                <h3><i class="fas fa-binoculars"></i> Our Vision</h3>
+                <p>To become the most trusted and comprehensive social media management platform, continuously innovating to meet the evolving needs of our users.</p>
+            </div>
+        </div>
+        
+        <div class="about-section">
+            <h2>What Sets Us Apart</h2>
+            <p>Unlike other social media management tools, PostNest is designed with both simplicity and power in mind. We support all major platforms—including newer ones like Bluesky and Threads—and integrate AI-powered tools to enhance your workflow.</p>
+            <p>Our platform is built on three core principles:</p>
+            <ul>
+                <li><strong>Efficiency:</strong> Streamline your workflow with intuitive tools and automation</li>
+                <li><strong>Flexibility:</strong> Customize your experience to match your unique needs</li>
+                <li><strong>Reliability:</strong> Count on our platform to perform consistently and securely</li>
+            </ul>
+        </div>
+        
+        <div class="about-section team-section">
+            <div class="team-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h2>Our Team</h2>
+            <p>PostNest is built by a dedicated team of social media enthusiasts, developers, and designers who understand the challenges of digital marketing. We're committed to creating tools that make your life easier and your social media presence stronger.</p>
+            <p>Based in the United States, our team works remotely across the country, bringing diverse perspectives and expertise to everything we create.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="PostNest Logo">
+                <p>The all-in-one platform for managing your social media presence.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="api-docs.html">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PostNest. All rights reserved. | Built with love in the USA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
