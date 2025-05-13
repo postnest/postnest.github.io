@@ -385,12 +385,11 @@ header {
 }
 
 .app-logo {
-    width: 40px;
-    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    width: 100%;
+    margin: 0;
     background: transparent;
 }
 
@@ -405,10 +404,11 @@ header {
 
 .app-name {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .app-content {
@@ -1869,24 +1869,25 @@ footer {
     fill: white; /* Change fill on hover */
 }
 
-/* Phone mockup - Improved App icon styling */
+/* Phone mockup - App icon styling */
 .app-icon-circle {
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #8a68f5, #6842e0);
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
 }
 
 .app-icon-circle::before {
     content: "P";
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 22px;
-    color: white;
+    font-size: 20px;
+    color: var(--primary-color);
 }
 
 /* Store buttons - specific adjustments */
