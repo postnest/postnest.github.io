@@ -317,54 +317,33 @@ header {
     margin-right: auto;
 }
 
-/* App buttons in hero section */
-.app-buttons {
+/* App buttons in hero section - equal sizing */
+.app-buttons, .app-download-buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     margin: 30px 0;
 }
 
+/* Reset any previous sizing constraints */
 .app-buttons img, .app-download-buttons img {
-    width: 180px !important;
-    height: 53px !important;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-height: 55px;
+    width: auto;
+    vertical-align: middle;
 }
 
-/* App download buttons */
-.app-store-button, .google-play-button {
-    display: inline-block;
-    width: 180px;
-    height: 53px;
-    transition: transform 0.3s ease;
-    overflow: hidden;
-}
-
-.app-store-button:hover, .google-play-button:hover {
-    transform: translateY(-5px);
-}
-
-.app-store-button img, .google-play-button img {
-    width: 180px;
-    height: 53px;
-    object-fit: contain;
-    display: block;
-}
-
-.app-download-buttons {
+.app-buttons a, .app-download-buttons a {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
-.app-download-buttons img:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+/* Remove any hover styles */
+.app-buttons img:hover, .app-download-buttons img:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none;
 }
 
 /* Phone mockup */
@@ -1908,4 +1887,18 @@ footer {
     font-weight: 700;
     font-size: 22px;
     color: white;
+}
+
+/* Store buttons - perfect alignment */
+.store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+
+.store-button img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
 }
