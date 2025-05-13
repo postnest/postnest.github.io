@@ -1772,14 +1772,6 @@ footer {
     }
 }
 
-/* Visual dividers between sections - clean and subtle */
-.section-divider {
-    height: 1px;
-    border: none;
-    background-color: #e5e5e5;
-    margin: 80px 0;
-}
-
 /* Add more visual interest to feature cards */
 .feature-card::before {
     content: '';
