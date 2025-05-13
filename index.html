@@ -6,7 +6,12 @@
     <title>PostNest - Social Media Scheduling Tool</title>
     <meta name="description" content="PostNest - The all-in-one platform for scheduling posts to Twitter/X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, and Pinterest.">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico">
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+    <meta name="theme-color" content="#6842e0">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
@@ -31,8 +36,7 @@
                         <li><a href="api-docs.html">API Docs</a></li>
                     </ul>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-secondary">Log In</a>
-                        <a href="#" class="btn btn-primary">Sign Up Free</a>
+                        <a href="#download" class="btn btn-primary">Download App</a>
                     </div>
                 </div>
                 <div class="mobile-menu">
@@ -48,9 +52,13 @@
                 <div class="hero-content">
                     <h1>Schedule Posts Across All Your Social Media Platforms</h1>
                     <p>PostNest helps you schedule and post content to Twitter/X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, and Pinterest—all from one dashboard. Boost efficiency with AI-powered tools!</p>
-                    <div class="hero-cta">
-                        <a href="#" class="btn btn-primary btn-large">Get Started for Free</a>
-                        <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+                    <div class="app-buttons">
+                        <a href="#" class="app-store-button">
+                            <img src="images/app-store-badge.svg" alt="Download on App Store">
+                        </a>
+                        <a href="#" class="google-play-button">
+                            <img src="images/google-play-badge.png" alt="Get it on Google Play">
+                        </a>
                     </div>
                     <div class="platforms">
                         <span>Post to:</span>
@@ -62,14 +70,18 @@
                             <i class="fab fa-tiktok" title="TikTok"></i>
                             <i class="fab fa-youtube" title="YouTube"></i>
                             <i class="fab fa-pinterest" title="Pinterest"></i>
-                            <i class="fa-brands fa-square-twitter" style="color: #1DA1F2;" title="Bluesky"></i>
-                            <i class="fa-brands fa-instagram" style="color: #000000;" title="Threads"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.8rem" height="1.8rem" fill="currentColor" class="bluesky-icon" viewBox="0 0 16 16" title="Bluesky">
+                                <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/>
+                            </svg>
+                            <i class="fas fa-at" title="Threads"></i>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <div class="section-divider"></div>
 
         <section id="features" class="features">
             <div class="container">
@@ -155,57 +167,70 @@
             </div>
         </section>
 
+        <div class="section-divider"></div>
+
         <section id="how-it-works" class="how-it-works">
             <div class="container">
                 <div class="section-header">
                     <h2>How PostNest Works</h2>
                     <p>Get started in minutes with these simple steps</p>
                 </div>
-                <div class="steps">
-                    <div class="step">
+                <div class="steps" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                    <div class="step" style="opacity: 1; transform: none; flex: 1; min-width: 200px; margin-bottom: 20px;">
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <div class="step-icon">
-                                <img src="images/connect-icon.png" alt="Connect" onerror="this.src='https://via.placeholder.com/50x50/e6e6fa/6842e0?text=Connect'; this.onerror=null;">
+                                <i class="fas fa-link"></i>
                             </div>
                             <h3>Connect Your Accounts</h3>
-                            <p>Link your social media accounts to PostNest with just a few clicks. We support all major platforms including Twitter/X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, and Pinterest.</p>
-
+                            <p>Sync all your social media accounts in one secure dashboard with our one-click authorization. We support Twitter/X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, and Pinterest.</p>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" style="opacity: 1; transform: none; flex: 1; min-width: 200px; margin-bottom: 20px;">
                         <div class="step-number">2</div>
                         <div class="step-content">
                             <div class="step-icon">
-                                <img src="images/create-icon.png" alt="Create" onerror="this.src='https://via.placeholder.com/50x50/e6e6fa/6842e0?text=Create'; this.onerror=null;">
+                                <i class="fas fa-upload"></i>
                             </div>
-                            <h3>Create Content</h3>
-                            <p>Design posts with our integrated tools or upload your own content. Use our Canva integration to create beautiful graphics without leaving PostNest, or let our AI assistant help generate engaging captions.</p>
+                            <h3>Upload Your Media</h3>
+                            <p>Select photos, videos, or create content directly within the app. Import from your device gallery or cloud storage services. Our smart auto-crop ensures your content looks perfect on every platform.</p>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" style="opacity: 1; transform: none; flex: 1; min-width: 200px; margin-bottom: 20px;">
                         <div class="step-number">3</div>
                         <div class="step-content">
                             <div class="step-icon">
-                                <img src="images/schedule-icon.png" alt="Schedule" onerror="this.src='https://via.placeholder.com/50x50/e6e6fa/6842e0?text=Schedule'; this.onerror=null;">
+                                <i class="fas fa-paint-brush"></i>
                             </div>
-                            <h3>Schedule Posts</h3>
-                            <p>Set publishing dates or use our AI to determine optimal posting times. Schedule content weeks in advance, set up recurring posts, or use our queue system to maintain a consistent posting schedule across all platforms.</p>
+                            <h3>Edit with Design Studio</h3>
+                            <p>Transform your content with our integrated Design Studio. Add text, filters, effects, and use our AI Caption Assistant to generate engaging captions and hashtags that drive engagement.</p>
                         </div>
                     </div>
-                    <div class="step">
+                    <div class="step" style="opacity: 1; transform: none; flex: 1; min-width: 200px; margin-bottom: 20px;">
                         <div class="step-number">4</div>
                         <div class="step-content">
                             <div class="step-icon">
-                                <img src="images/track-icon.png" alt="Track" onerror="this.src='https://via.placeholder.com/50x50/e6e6fa/6842e0?text=Track'; this.onerror=null;">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Schedule & Post</h3>
+                            <p>Choose specific times or let our AI suggest optimal posting times based on when your audience is most active. Schedule content weeks in advance or post immediately across all your platforms with one click.</p>
+                        </div>
+                    </div>
+                    <div class="step" style="opacity: 1; transform: none; flex: 1; min-width: 200px; margin-bottom: 20px;">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-icon">
+                                <i class="fas fa-chart-line"></i>
                             </div>
                             <h3>Track Performance</h3>
-                            <p>Monitor engagement and optimize your strategy with analytics. Get detailed reports on post performance, audience growth, and engagement metrics to refine your social media strategy and maximize your impact.</p>
+                            <p>Monitor engagement metrics, audience growth, and content performance with our intuitive analytics dashboard. Generate custom reports to optimize your strategy based on real data.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="section-divider"></div>
 
         <section class="canva-integration">
             <div class="container">
@@ -252,6 +277,8 @@
                 </div>
             </div>
         </section>
+
+        <div class="section-divider"></div>
 
         <section id="pricing" class="pricing">
             <div class="container">
@@ -353,6 +380,73 @@
             </div>
         </section>
 
+        <div class="section-divider"></div>
+
+        <section id="download" class="app-download">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Download the PostNest App</h2>
+                    <p>Take your social media management on the go</p>
+                </div>
+                <div class="download-content">
+                    <div class="app-info">
+                        <div class="app-features">
+                            <div class="app-feature">
+                                <i class="fas fa-bell"></i>
+                                <div>
+                                    <h3>Instant Notifications</h3>
+                                    <p>Get alerted when your posts go live or receive engagement</p>
+                                </div>
+                            </div>
+                            <div class="app-feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div>
+                                    <h3>Post on the Go</h3>
+                                    <p>Create and schedule content from anywhere, anytime</p>
+                                </div>
+                            </div>
+                            <div class="app-feature">
+                                <i class="fas fa-image"></i>
+                                <div>
+                                    <h3>Mobile Camera Integration</h3>
+                                    <p>Capture and post content instantly from your device</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-download-buttons">
+                            <a href="#" class="app-store-button">
+                                <img src="images/app-store-badge.svg" alt="Download on App Store">
+                            </a>
+                            <a href="#" class="google-play-button">
+                                <img src="images/google-play-badge.png" alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-mockup">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-screenshot">
+                                    <div class="app-header">
+                                        <div class="app-logo">
+                                            <div class="app-icon-circle"></div>
+                                        </div>
+                                        <div class="app-name">PostNest</div>
+                                    </div>
+                                    <div class="app-content">
+                                        <div class="content-item"></div>
+                                        <div class="content-item"></div>
+                                        <div class="content-item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
         <section id="contact" class="contact">
             <div class="container">
                 <div class="section-header">
@@ -361,11 +455,11 @@
                 </div>
                 <div class="contact-container">
                     <p style="text-align: center; font-size: 16px;">Have questions? Email us at <a href="mailto:info@postnest.app">info@postnest.app</a> or reach out via social media.</p>
-                    <div class="social-links" style="text-align: center; margin-top: 20px;">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <div class="social-links">
+                        <a href="#" class="social-icon-link" data-platform="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon-link" data-platform="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon-link" data-platform="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon-link" data-platform="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -391,8 +485,10 @@
             </div>
             <div class="footer-copyright-social">
                 <div class="footer-social-icons">
-                    <a href="https://x.com/postnestapp" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://instagram.com/postnestapp" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/postnestapp" class="social-icon-link" data-platform="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/postnestapp" class="social-icon-link" data-platform="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon-link" data-platform="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon-link" data-platform="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <p>&copy; 2025 PostNest. All rights reserved.</p>
             </div>

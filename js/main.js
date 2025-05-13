@@ -2,36 +2,40 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileMenuButton) {
         mobileMenuButton.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            mobileMenuButton.classList.toggle('active');
+            document.body.classList.toggle('mobile-menu-open');
         });
     }
-    
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
-                
+
                 // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
+                    mobileMenuButton.classList.remove('active');
+                    document.body.classList.remove('mobile-menu-open');
                 }
             }
         });
     });
-    
+
     // Pricing tabs functionality
     const pricingTabs = document.querySelectorAll('.pricing-tab');
     const pricingCards = document.querySelectorAll('.pricing-card');
@@ -94,25 +98,74 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
+
+    // Add animation effects on scroll
+    const animateOnScroll = () => {
+        const elements = document.querySelectorAll('.feature-card, .step, .app-feature, .app-mockup');
+
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementPosition < windowHeight - 100) {
+                element.classList.add('animate');
+            }
+        });
+    };
+
+    // Run once on page load
+    animateOnScroll();
+
+    // Then run on scroll
+    window.addEventListener('scroll', animateOnScroll);
+
+    // Handle platform icons hover effect
+    const platformIcons = document.querySelectorAll('.platform-icons i');
+    platformIcons.forEach(icon => {
+        // Already using title attribute for tooltips
+        icon.setAttribute('aria-label', icon.getAttribute('title'));
+    });
+
+    // Handle social icon links hover effect
+    const socialLinks = document.querySelectorAll('.social-icon-link');
+    socialLinks.forEach(link => {
+        const platform = link.getAttribute('data-platform');
+        if (platform) {
+            // Set aria label for accessibility
+            link.setAttribute('aria-label', platform);
+        }
+    });
+
     // Form submission
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
+
             // Here you would normally send the data to a server
             // For now, we'll just log it and show a success message
             console.log('Form submitted:', { name, email, message });
-            
+
             // Show success message
-            alert('Thanks for your message! We\'ll get back to you soon.');
-            
+            const formMessage = document.querySelector('.form-message');
+            if (formMessage) {
+                formMessage.textContent = 'Thanks for your message! We\'ll get back to you soon.';
+                formMessage.classList.add('success');
+                formMessage.style.display = 'block';
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            } else {
+                alert('Thanks for your message! We\'ll get back to you soon.');
+            }
+
             // Reset form
             contactForm.reset();
         });
